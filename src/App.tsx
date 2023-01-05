@@ -1,4 +1,3 @@
-import { useState } from "react";
 import styled, { ThemeProvider } from "styled-components";
 import { intro, experiences, otherExperiences, sideProjects, qna } from "./data";
 import TopInfo from "./components/TopInfo";
@@ -7,8 +6,6 @@ import theme from "./styles/theme";
 import ExperienceSection from "./components/ExperienceSection";
 import SideProject from "./components/SideProject";
 import Qna from "./components/Qna";
-
-
 
 const Container = styled.div`
     max-width: 980px;

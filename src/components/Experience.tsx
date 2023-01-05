@@ -2,7 +2,7 @@ import { ExperienceProps } from "../data";
 import styled from "styled-components";
 import SkillTag from "./SkillTag";
 import Project from "./Project";
-import { ProjectDatePeriodForm } from "../utiles/index";
+import { ProjectDatePeriodForm } from "../utilities/index";
 
 const WorkSection = styled.section`
     &:not(:last-child):after {
