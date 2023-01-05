@@ -14,7 +14,8 @@ const Title = styled.h2`
 const Project = styled.div`
     margin: 16px auto;
     padding: 16px;
-    border: 1px solid #e0e0e0;
+    border: 1px solid #333;
+    border-radius: 4px;
 
     & > h3 {
         font-size: ${({ theme }) => theme.fontSizes.paragraph};
@@ -61,7 +62,7 @@ export default ({
                                                         >
                                                             <FiLink style={{
                                                                 verticalAlign: "middle",
-                                                                color: "grey",
+                                                                color: "black",
                                                                 fontSize: "15px",
                                                                 margin: "-4px 5px 0 0"
                                                             }} />

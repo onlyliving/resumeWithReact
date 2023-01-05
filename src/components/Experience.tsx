@@ -2,15 +2,17 @@ import { ExperienceProps } from "../data";
 import styled from "styled-components";
 import SkillTag from "./SkillTag";
 import Project from "./Project";
+import { ProjectDatePeriodForm } from "../utiles/index";
 
 const WorkSection = styled.section`
-    &:after {
+    &:not(:last-child):after {
         content: "";
         display:block;
         width: 100%;
         height: 1px;
         background-color: #e0e0e0;
         margin: 24px auto;
+
     }
 `;
 
@@ -25,7 +27,7 @@ const Head = styled.h3`
 
 const WorkPeriod = styled.li`
     margin: 4px auto 10px auto;
-    color: grey;
+    font-size: 15px;
 `;
 
 const Retrospective = styled.li`
@@ -51,11 +53,13 @@ export default ({
     data,
     index
 }: Props) => {
+    const datePeriod = new ProjectDatePeriodForm(data.period.start, data.period.finish);
+
     return (
         <WorkSection key={index}>
             <Head><em>{data.position}</em>{data.company}</Head>
             <ul>
-                <WorkPeriod>{data.period.start}~{data.period.finish}</WorkPeriod>
+                <WorkPeriod>{datePeriod.formatNumber()}, {datePeriod.formatKor()}</WorkPeriod>
                 <li>
                     <SkillTag data={data.skill} />
                 </li>

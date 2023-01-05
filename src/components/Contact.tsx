@@ -52,7 +52,7 @@ export default ({
                             <Link href={item.link} target="_blank">
                                 <FiLink style={{
                                     verticalAlign: "middle",
-                                    color: "grey",
+                                    color: "black",
                                     fontSize: "15px",
                                     margin: "0 5px 0 0"
                                 }} />

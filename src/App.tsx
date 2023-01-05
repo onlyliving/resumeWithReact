@@ -13,7 +13,7 @@ import Qna from "./components/Qna";
 const Container = styled.div`
     max-width: 980px;
     margin: auto;
-    padding: 24px;
+    padding: 60px 24px;
 `;
 
 const Footer = styled.footer`
@@ -30,27 +30,27 @@ export default () => {
                         data={intro}
                     />
 
-                    <Margin height={30} />
+                    <Margin height={48} />
 
                     <ExperienceSection
                         title="Work Experiences"
                         data={experiences}
                     />
 
-                    <Margin height={30} />
+                    <Margin height={48} />
 
                     <ExperienceSection
                         title="Other Experiences"
                         data={otherExperiences}
                     />
 
-                    <Margin height={30} />
+                    <Margin height={48} />
 
                     <SideProject
                         data={sideProjects}
                     />
 
-                    <Margin height={30} />
+                    <Margin height={48} />
 
                     <Qna
                         data={qna}

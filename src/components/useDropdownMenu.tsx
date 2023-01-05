@@ -12,7 +12,7 @@ const Title = styled.dt`
     position: relative;
     font-weight: 600;
     padding: 16px 16px 10px 28px;
-    border-bottom: 1px solid #e4e4e4;
+    border-bottom: 1px solid #333;
     cursor: pointer;
     &:before {
         content: "Q.";
@@ -27,7 +27,7 @@ const Title = styled.dt`
 const Content = styled.dd`
     padding: 16px 30px;
     margin: 0 auto 36px;
-    background: #f8f8f8;
+    background: #f7f7f7;
     white-space: pre-wrap;
 `;
 
@@ -63,7 +63,7 @@ export default ({
                                     <Link key={itemIndex} href={itemLink.href} target="_blank">
                                         <FiLink style={{
                                             verticalAlign: "middle",
-                                            color: "grey",
+                                            color: "black",
                                             fontSize: "15px",
                                             margin: "-4px 5px 0 0"
                                         }} />

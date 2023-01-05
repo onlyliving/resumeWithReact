@@ -6,6 +6,10 @@
 //     lg: "1.5rem",
 // };
 
+const deviceBreakPoint = {
+    tablet: "768px",
+};
+
 const fontSizes = {
     title: "64px",
     subTitle: "34px",
@@ -53,6 +57,7 @@ const theme = {
     windowSize,
     fontSizes,
     common,
+    deviceBreakPoint,
 };
 
 export default theme;

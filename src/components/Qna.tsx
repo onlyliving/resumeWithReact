@@ -25,6 +25,7 @@ export default ({
                             <UseDropdownMenu
                                 data={item}
                                 index={index}
+                                key={index}
                             />
                         )
                     })

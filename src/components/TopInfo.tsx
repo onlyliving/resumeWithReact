@@ -6,11 +6,20 @@ import { IntroProps } from "../data";
 
 const Title = styled.h1`
     line-height: 1.2;
-    font-size: ${({ theme }) => theme.fontSizes.title}
+    font-size: ${({ theme }) => theme.fontSizes.title};
+
+    @media ( max-width: ${({ theme }) => theme.deviceBreakPoint.tablet}) {
+        font-size: 42px;
+    }
+
 `;
 
 const IntroText = styled.p`
     font-size: 24px;
+
+    @media ( max-width: ${({ theme }) => theme.deviceBreakPoint.tablet}) {
+        font-size: 22px;
+    }
 `;
 
 
