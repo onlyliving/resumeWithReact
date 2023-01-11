@@ -3,6 +3,8 @@ import Margin from "../Margin";
 import Contact from "./Contact";
 import TeckStack from "./TechStack";
 import { IntroProps } from "../data";
+import TypeIt from "typeit-react";
+import { useState } from "react";
 
 const Title = styled.h1`
     line-height: 1.2;
@@ -34,7 +36,23 @@ export default ({
 
     return (
         <div>
-            <Title>{title}</Title>
+            <Title>
+
+                {title}
+                {/* <TypeIt
+                    getBeforeInit={(instance) => {
+                        return instance.type("디자인을 좋아하는 개발자, ").pause(750).type("김소희입니다.").pause(500).delete(1).pause(500).type("!");
+                    }}
+
+                    options={{
+                        speed: 80,
+                        // waitUntilVisible: false,
+                    }}
+                /> */}
+            </Title>
+
+
+
 
             <Margin height={36} />
 
