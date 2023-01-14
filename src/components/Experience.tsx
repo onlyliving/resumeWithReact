@@ -2,7 +2,7 @@ import { ExperienceProps } from "../data";
 import styled from "styled-components";
 import SkillTag from "./SkillTag";
 import Project from "./Project";
-import { ProjectDatePeriodForm } from "../utilities/index";
+import { DateForm } from "../utils/index";
 
 const WorkSection = styled.section`
     &:not(:last-child):after {
@@ -53,13 +53,13 @@ export default ({
     data,
     index
 }: Props) => {
-    const datePeriod = new ProjectDatePeriodForm(data.period.start, data.period.finish);
+    const datePeriod = new DateForm(data.period.start, data.period.finish);
 
     return (
         <WorkSection key={index}>
             <Head><em>{data.position}</em>{data.company}</Head>
             <ul>
-                <WorkPeriod>{datePeriod.formatNumber()}, {datePeriod.formatKor()}</WorkPeriod>
+                <WorkPeriod>{datePeriod.formatNumber()}, {datePeriod.getPeriodFormatKor()}</WorkPeriod>
                 <li>
                     <SkillTag data={data.skill} />
                 </li>

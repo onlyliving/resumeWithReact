@@ -33,12 +33,13 @@ export interface ExperienceProps {
 
 export const intro = {
     title: "디자인을 좋아하는 개발자, 김소희입니다.",
-    introText: "웹 프론트엔드 개발 4년차 입니다. 기획과 디자인 의도대로 구현하는 것이 재미있습니다. 기획단에서 생각하지 못한 디테일을 체크해서, 같이 의견을 맞대어 더 나은 아웃풋을 만들 때 더욱 보람을 느낍니다. 서로 존중하며 나아가는 팀과 함께 하고 싶습니다.",
+    introText:
+        "웹 프론트엔드 개발자입니다. 기획과 디자인 의도대로 구현하는 것이 재미있습니다. 기획단에서 생각하지 못한 디테일을 체크해서, 같이 의견을 맞대어 더 나은 아웃풋을 만들 때 더욱 보람을 느낍니다. 서로 존중하며 나아가는 팀과 함께 하고 싶습니다.",
     infoLink: [
         {
             type: "email",
             link: "mailto:greensohee88@naver.com",
-            desc: "greensohee88@naver.com",
+            desc: "이메일 : greensohee88@naver.com",
             isShow: true,
         },
         {
@@ -50,8 +51,14 @@ export const intro = {
         {
             type: "github",
             link: "https://github.com/onlyliving",
-            desc: "https://github.com/onlyliving",
+            desc: "깃허브 : https://github.com/onlyliving",
             isShow: true,
+        },
+        {
+            type: "resume",
+            link: "https://onlyliving.github.io/resumeWithReact/",
+            desc: "이력서",
+            isShow: false,
         },
         {
             type: "insta",
@@ -66,8 +73,16 @@ export const intro = {
             isShow: false,
         },
     ],
-    mainTechStack: ["HTML5, CSS3/SCSS, TypeScript, React"],
-    techStack: ["JavaScript, Webpack, flask, Git, Zeplin"],
+    mainTechStack: ["HTML5", "CSS3/SCSS", "TypeScript", "React"],
+    techStack: [
+        "JavaScript",
+        "Webpack",
+        "flask",
+        "Git",
+        "Zeplin",
+        "NextJS(learning)",
+        "React Native(learning)",
+    ],
 };
 
 export const experiences = [
@@ -79,15 +94,31 @@ export const experiences = [
             finish: "2022-07",
         },
         link: "",
-        skill: ["HTML5", "SCSS", "JavaScript", "TypeScript", "ReactJS", "Webpack", "Docker", "Zeplin", "Gitlab", "Visual Studio Code"],
+        skill: [
+            "HTML5",
+            "SCSS",
+            "JavaScript",
+            "TypeScript",
+            "ReactJS",
+            "Webpack",
+            "Docker",
+            "Zeplin",
+            "Gitlab",
+            "Visual Studio Code",
+        ],
         workDetail: [
             {
                 head: "인테리어 플랫폼 웹페이지 개발",
-                content: ["회원가입, 로그인, 게시물 작성, 상세페이지, 서비스 목록, 검색 등 40여 페이지(SPA) 개발."],
+                content: [
+                    "회원가입, 로그인, 게시물 작성, 상세페이지, 서비스 목록, 검색 등 40여 페이지(SPA) 개발.",
+                ],
             },
             {
                 head: "인테리어 플랫폼 데모 웹페이지 개발",
-                content: ["AI 엔진 관련 페이지를 제외한 나머지 페이지는 더미 데이터로 구성하여 10여 페이지(SPA) 개발.", "PPT로 만든 기획/디자인을 토대로 개발 진행."],
+                content: [
+                    "AI 엔진 관련 페이지를 제외한 나머지 페이지는 더미 데이터로 구성하여 10여 페이지(SPA) 개발.",
+                    "PPT로 만든 기획/디자인을 토대로 개발 진행.",
+                ],
             },
             {
                 head: "쇼핑몰 상세페이지 에디터 툴(사맛디 에디터) 웹 프론트 개발",
@@ -100,7 +131,9 @@ export const experiences = [
             },
             {
                 head: "사맛디 패션 AI 데모 웹 프론트 개발",
-                content: ["사맛디 패션 AI 엔진 기술을 소개하는 데모 페이지. 사람이 들어간 이미지를 업로드하면, 사맛디 AI 엔진이 옷을 분석하여 상/하의의 소재, 무드 등 결괏값에 따라 웹 페이지에 캔버스(Canvas)로 구현."],
+                content: [
+                    "사맛디 패션 AI 엔진 기술을 소개하는 데모 페이지. 사람이 들어간 이미지를 업로드하면, 사맛디 AI 엔진이 옷을 분석하여 상/하의의 소재, 무드 등 결괏값에 따라 웹 페이지에 캔버스(Canvas)로 구현.",
+                ],
             },
             // {
             //     head: "데이터 검수 데모 웹 프론트 개발",
@@ -121,7 +154,9 @@ export const experiences = [
         workDetail: [
             {
                 head: "AI 모델 데모페이지 웹 프론트 개발 (데이터 시각화)",
-                content: ["기획안을 받으면 디자인부터 프론트 개발, 필요한 데이터 구조를 생각해서 플라스크(flask)로 더미 API까지 작업 (그 이후에 팀원이 더미 API를 실제 엔진과 연결하여 완료하는 방식의 흐름으로 진행)"],
+                content: [
+                    "기획안을 받으면 디자인부터 프론트 개발, 필요한 데이터 구조를 생각해서 플라스크(flask)로 더미 API까지 작업 (그 이후에 팀원이 더미 API를 실제 엔진과 연결하여 완료하는 방식의 흐름으로 진행)",
+                ],
             },
         ],
         effect: "연구 개발한 AI 엔진에 대하여 학습 결과를 잘 보여줄 수 있는 데모 페이지가 필요해서 투입이 되었습니다. 가상환경, PyCharm, Flask 등 Python 개발 환경을 경험하였습니다.",
@@ -134,11 +169,27 @@ export const experiences = [
             finish: "2019-12",
         },
         link: "https://trost.co.kr/",
-        skill: ["HTML5", "CSS3", "JavaScript", "Webpack", "Zeplin", "GitLab", "Trello", "SourceTree", "Postman", "InteliJ", "Visual Studio Code"],
+        skill: [
+            "HTML5",
+            "CSS3",
+            "JavaScript",
+            "Webpack",
+            "Zeplin",
+            "GitLab",
+            "Trello",
+            "SourceTree",
+            "Postman",
+            "InteliJ",
+            "Visual Studio Code",
+        ],
         workDetail: [
             {
                 head: "트로스트(TROST) 플랫폼 웹 프론트 개발",
-                content: ["모바일에만 이뤄졌던 서비스를 PC Web에서도 가능하게끔 서비스 페이지 개발.", "기존 코드의 경우, 코드 확장성을 위하여(최신 프레임워크를 사용하려면 JS 기반이어야 하므로) PHP, jQuery로 개발된 코드를 HTML, JavaScript 코드로 변경.", "깃랩(GitLab)으로 이슈 관리 (기획, 마케팅 등과 협의 시에는 트렐로(Trello)로 관리)"],
+                content: [
+                    "모바일에만 이뤄졌던 서비스를 PC Web에서도 가능하게끔 서비스 페이지 개발.",
+                    "기존 코드의 경우, 코드 확장성을 위하여(최신 프레임워크를 사용하려면 JS 기반이어야 하므로) PHP, jQuery로 개발된 코드를 HTML, JavaScript 코드로 변경.",
+                    "깃랩(GitLab)으로 이슈 관리 (기획, 마케팅 등과 협의 시에는 트렐로(Trello)로 관리)",
+                ],
                 // content: [
                 //     "입사 후 개발 시작 단계 : PC 웹사이트에 서비스를 도입하는 초기 단계 (모바일앱 서비스만 존재)",
                 //     "기획에 따라 웹페이지 기능 개선 및 구축 (HTML 마크업 및 퍼블리싱, RESTful API 연결 등 기능 구현)",
@@ -146,7 +197,9 @@ export const experiences = [
             },
             {
                 head: "앱 내의 웹페이지 프론트 개발",
-                content: ["모바일 앱에서 기획적으로 업데이트가 잦은 서비스 페이지는 앱 내의 웹페이지로 개발. (유저 편의성을 위하여 앱 업데이트를 빈번하게 발생시키지 않도록 함)"],
+                content: [
+                    "모바일 앱에서 기획적으로 업데이트가 잦은 서비스 페이지는 앱 내의 웹페이지로 개발. (유저 편의성을 위하여 앱 업데이트를 빈번하게 발생시키지 않도록 함)",
+                ],
                 // content: ["모바일 앱에서 기획적으로 자주 업데이트가 되는 페이지는 웹 포지션으로 개발.", "유저가 앱 업데이트를 해야 하는 번거로움을 줄임."],
                 // content: ["개발팀 협의로 앱 내에 웹페이지 개발이 필요한 부분은 웹 포지션으로 개발 (개발 변경이 잦은 서비스 페이지 등)"],
             },
@@ -154,6 +207,8 @@ export const experiences = [
         effect: "데이터를 다루는 것을 알게 되었습니다. (서버 개발자와 API 요청과 응답에 대한 규칙 정하기, 언제 어떤 데이터를 불러와야 하는지 등) 웹앱에서 앱과의 통신하는 협업 과정도 기억에 크게 남습니다.",
     },
 ];
+
+export const TIME_LINE_START_DATE = "2016-01";
 
 export const otherExperiences = [
     {
@@ -169,7 +224,10 @@ export const otherExperiences = [
             {
                 head: "룸앤스페이스 서비스 (PC, Mobile Web)",
                 // head: "웹사이트와 모바일웹 구축을 위한 디자인 및 퍼블리싱 작업",
-                content: ["서버 세팅만 되어있는 상태에서 디자인부터 웹 퍼블리싱(반응형)까지 작업을 함.", "웹 작업 비율(%) = 웹 디자인 작업 70 + 퍼블리싱 30"],
+                content: [
+                    "서버 세팅만 되어있는 상태에서 디자인부터 웹 퍼블리싱(반응형)까지 작업을 함.",
+                    "웹 작업 비율(%) = 웹 디자인 작업 70 + 퍼블리싱 30",
+                ],
             },
         ],
         effect: "웹디자인(UI, UX)에 대한 감각을 키웠습니다. 서버 개발자와 협업하면서 작업관리 시스템의 필요성을 느꼈습니다. 개발에 대한 호기심과 갈증이 생겨서 스터디 모임에 들어가는 등 적극적으로 프론트엔드 영역을 알기 위하여 찾아보게 되었습니다.",

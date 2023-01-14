@@ -3,6 +3,7 @@
     "private": true,
     "version": "0.0.0",
     "type": "module",
+    "description": "웹 프론트엔드 개발자, 김소희의 이력서 입니다.",
     "scripts": {
         "dev": "vite",
         "build": "tsc && vite build",

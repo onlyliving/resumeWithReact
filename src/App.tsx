@@ -3,11 +3,14 @@ import styled, { ThemeProvider } from "styled-components";
 
 import { intro, experiences, otherExperiences, sideProjects, qna } from "./data";
 import TopInfo from "./components/TopInfo";
-import Margin from "./Margin";
+import Margin from "./components/Margin";
 import theme from "./styles/theme";
 import ExperienceSection from "./components/ExperienceSection";
 // import SideProject from "./components/SideProject";
 // import Qna from "./components/Qna";
+
+
+import TimeLine from "./components/TimeLine";
 
 const Container = styled.div`
     max-width: 980px;
@@ -23,6 +26,7 @@ const SideProject = React.lazy(() => import("./components/SideProject"));
 const Qna = React.lazy(() => import("./components/Qna"));
 
 export default () => {
+
     return (
         <ThemeProvider theme={theme}>
             <Container>
@@ -31,30 +35,31 @@ export default () => {
                         data={intro}
                     />
 
-                    <Margin height={48} />
+                    <TimeLine />
 
-
+                    <Margin height={42} />
 
                     <ExperienceSection
                         title="Work Experiences"
                         data={experiences}
                     />
 
-                    <Margin height={48} />
+                    <Margin height={42} />
 
                     <ExperienceSection
                         title="Other Experiences"
                         data={otherExperiences}
                     />
 
-                    <Margin height={48} />
+                    <Margin height={42} />
+
                     <Suspense fallback={<div>Loading...</div>}>
 
                         <SideProject
                             data={sideProjects}
                         />
 
-                        <Margin height={48} />
+                        <Margin height={42} />
 
                         <Qna
                             data={qna}
@@ -62,6 +67,7 @@ export default () => {
                     </Suspense>
                 </main>
                 <Footer>ⓒ SoheeKim Frontend Resume</Footer>
+
             </Container>
         </ThemeProvider>
     )

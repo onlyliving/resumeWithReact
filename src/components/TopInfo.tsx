@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import Margin from "../Margin";
-import Contact from "./Contact";
-import TeckStack from "./TechStack";
+import Margin from "./Margin";
 import { IntroProps } from "../data";
 import TypeIt from "typeit-react";
-import { useState } from "react";
+import Keywords from "./Keywords";
+import ContactList from "./ContactList";
+import ListContentBox from "./ListContentBox";
 
 const Title = styled.h1`
     line-height: 1.2;
@@ -13,7 +13,6 @@ const Title = styled.h1`
     @media ( max-width: ${({ theme }) => theme.deviceBreakPoint.tablet}) {
         font-size: 42px;
     }
-
 `;
 
 const IntroText = styled.p`
@@ -23,7 +22,6 @@ const IntroText = styled.p`
         font-size: 22px;
     }
 `;
-
 
 interface Props {
     data: IntroProps
@@ -51,25 +49,43 @@ export default ({
                 /> */}
             </Title>
 
-
-
-
-            <Margin height={36} />
+            <Margin height={30} />
 
             <IntroText>{introText}</IntroText>
 
-            <Margin height={36} />
+            <Margin height={30} />
 
-            <Contact
-                infoLinkData={infoLink}
+            <ListContentBox
+                title={"Contact"}
+                childrens={
+                    <ContactList datas={infoLink} />
+                }
             />
 
-            <Margin height={36} />
+            <Margin height={30} />
 
-            <TeckStack
-                mainTechStack={mainTechStack}
-                techStack={techStack}
+            <ListContentBox
+                title={"주요 기술"}
+                childrens={
+                    <Keywords
+                        datas={mainTechStack}
+                    />
+                }
             />
+
+            <Margin height={30} />
+
+            <ListContentBox
+                title={"기술 태그"}
+                childrens={
+                    <Keywords
+                        datas={techStack}
+                    />
+                }
+            />
+
+            <Margin height={30} />
+
         </div>
     )
 }
