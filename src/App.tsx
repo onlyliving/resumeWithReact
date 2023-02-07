@@ -1,4 +1,4 @@
-import React, { Suspense } from "react";
+import React, { Suspense } from 'react';
 import styled, { ThemeProvider } from "styled-components";
 
 import { intro, experiences, otherExperiences, sideProjects, qna } from "./data";
@@ -8,6 +8,7 @@ import theme from "./styles/theme";
 import ExperienceSection from "./components/ExperienceSection";
 // import SideProject from "./components/SideProject";
 // import Qna from "./components/Qna";
+import { noticeConsoleLog } from "./utils";
 
 
 import TimeLine from "./components/TimeLine";
@@ -22,8 +23,9 @@ const Footer = styled.footer`
     margin: 24px auto 16px auto;
 `;
 
-const SideProject = React.lazy(() => import("./components/SideProject"));
-const Qna = React.lazy(() => import("./components/Qna"));
+const SideProject = React.lazy(() => import('./components/SideProject'));
+const Qna = React.lazy(() => import('./components/Qna'));
+noticeConsoleLog();
 
 export default () => {
 
